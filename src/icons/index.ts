@@ -45,6 +45,11 @@ import LayoutDashboardIcon from "./LayoutDashboardIcon.vue";
 import UserGroupIcon from "./UserGroupIcon.vue";
 import BellIcon from "./BellIcon.vue";
 import BarChartIcon from "./BarChartIcon.vue";
+import ClipboardListIcon from "./ClipboardListIcon.vue";
+import LayersIcon from "./LayersIcon.vue";
+import BanknoteArrowDownIcon from "./BanknoteArrowDownIcon.vue";
+import BanknoteArrowUpIcon from "./BanknoteArrowUpIcon.vue";
+import CreditCardIcon from "./CreditCardIcon.vue";
 
 export {
   BellIcon,
@@ -94,4 +99,9 @@ export {
   MailBox,
   SendIcon,
   DraftIcon,
+  ClipboardListIcon,
+  CreditCardIcon,
+  LayersIcon,
+  BanknoteArrowDownIcon,
+  BanknoteArrowUpIcon,
 };
