@@ -1,35 +1,27 @@
 <template>
   <div class="mb-10">
-    <div
-      class="flex flex-wrap justify-center gap-1 mb-2 font-bold text-title-md text-brand-500 dark:text-brand-400 xl:text-title-lg"
-    >
+    <div class="flex flex-wrap justify-center gap-1 mb-2 font-bold text-title-md text-brand-500 dark:text-brand-400 xl:text-title-lg">
       <!-- timer days -->
       <div v-for="(day, index) in daysArray" :key="index">
         <div v-show="day.visible" class="timer-box">
           <span>{{ day.value }}</span>
         </div>
       </div>
-
       :
-
       <!-- timer hours -->
       <div v-for="(hour, index) in hoursArray" :key="index">
         <div v-show="hour.visible" class="timer-box">
           <span>{{ hour.value }}</span>
         </div>
       </div>
-
       :
-
       <!-- timer minutes -->
       <div v-for="(minute, index) in minutesArray" :key="index">
         <div v-show="minute.visible" class="timer-box">
           <span>{{ minute.value }}</span>
         </div>
       </div>
-
       :
-
       <!-- timer seconds -->
       <div v-for="(second, index) in secondsArray" :key="index">
         <div v-show="second.visible" class="timer-box">
@@ -37,7 +29,6 @@
         </div>
       </div>
     </div>
-
     <div class="text-base text-center text-gray-500 dark:text-gray-400">
       <div class="flex justify-center gap-0.5">
         <div v-for="(day, index) in daysArray" :key="index">
