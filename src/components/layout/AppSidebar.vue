@@ -76,6 +76,7 @@ import {
   HorizontalDots,
   LayersIcon,
   SettingsIcon,
+  UsersIcon,
 } from "@/icons";
 import { useSidebar } from "@/composables/useSidebar";
 
@@ -110,6 +111,11 @@ const menuGroups = [
         icon: FolderIcon,
         name: "Inventory",
         path: "/inventory",
+      },
+      {
+        icon: UsersIcon,
+        name: "Users",
+        path: "/users",
       },
     ],
   },

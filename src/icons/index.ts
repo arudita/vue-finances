@@ -50,6 +50,12 @@ import LayersIcon from "./LayersIcon.vue";
 import BanknoteArrowDownIcon from "./BanknoteArrowDownIcon.vue";
 import BanknoteArrowUpIcon from "./BanknoteArrowUpIcon.vue";
 import CreditCardIcon from "./CreditCardIcon.vue";
+import PencilIcon from "./PencilIcon.vue";
+import PencilLineIcon from "./PencilLineIcon.vue";
+import UsersIcon from "./UsersIcon.vue";
+import UserPenIcon from "./UserPenIcon.vue";
+import TablePropertiesIcon from "./TablePropertiesIcon.vue";
+import SquarePenIcon from "./SquarePenIcon.vue";
 
 export {
   BellIcon,
@@ -104,4 +110,10 @@ export {
   LayersIcon,
   BanknoteArrowDownIcon,
   BanknoteArrowUpIcon,
+  PencilIcon,
+  PencilLineIcon,
+  SquarePenIcon,
+  TablePropertiesIcon,
+  UsersIcon,
+  UserPenIcon,
 };

@@ -115,6 +115,12 @@ const routes = [
     meta: { requiresGuest: true },
   },
   {
+    path: '/users',
+    name: 'Users',
+    component: () => import('@/views/others/UsersView.vue'),
+    meta: { requiresGuest: true },
+  },
+  {
     path: '/profile',
     name: 'Profile',
     component: () => import('@/views/others/ProfileView.vue'),

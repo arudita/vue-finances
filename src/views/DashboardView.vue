@@ -1,14 +1,10 @@
 <template>
   <AdminLayout>
-    <div class="grid grid-cols-12 gap-4 md:gap-6">
-      <div class="col-span-12 space-y-6 xl:col-span-7">
-        <EcommerceMetrics />
-        <MonthlyTarget />
+    <div class="grid grid-cols-3 gap-4 md:gap-6">
+      <div class="col-span-3">
+        <TransactionMetrics />
       </div>
-      <div class="col-span-12 xl:col-span-5">
-        <MonthlySale />
-      </div>
-      <div class="col-span-12">
+      <div class="col-span-3">
         <StatisticsChart />
       </div>
     </div>
@@ -17,8 +13,6 @@
 
 <script setup lang="ts">
 import AdminLayout from '../components/layout/AdminLayout.vue'
-import EcommerceMetrics from '../components/ecommerce/EcommerceMetrics.vue'
-import MonthlyTarget from '../components/ecommerce/MonthlySale.vue'
-import MonthlySale from '../components/ecommerce/MonthlyTarget.vue'
 import StatisticsChart from '../components/ecommerce/StatisticsChart.vue'
+import TransactionMetrics from '@/components/ecommerce/TransactionMetrics.vue';
 </script>
