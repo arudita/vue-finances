@@ -55,7 +55,7 @@ class ApiService {
         return this.api.post('/api/auth/logout');
     }
 
-    async register(userData: { name: string; email: string; password: string; password_confirmation: string }): Promise<AxiosResponse> {
+    async register(userData: { name: string; email: string; password: string; password_confirmation: string, level: number }): Promise<AxiosResponse> {
         await this.getCsrfToken();
         return this.api.post('/api/auth/register', userData);
     }

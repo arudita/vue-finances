@@ -1,9 +1,11 @@
 <template>
-  <div class="rounded-2xl border border-gray-200 bg-white px-5 pb-5 pt-5 dark:border-gray-800 dark:bg-white/[0.03] sm:px-6 sm:pt-6">
-    <div class="flex flex-col gap-5 mb-6 sm:flex-row sm:justify-between">
-      <div class="w-full">
-        <h3 class="text-lg font-semibold text-gray-800 dark:text-white/90">Statistics</h3>
-        <p class="mt-1 text-gray-500 text-theme-sm dark:text-gray-400">
+  <div class="rounded-2xl border border-gray-200 bg-white dark:border-gray-800 dark:bg-white/[0.03]">
+    <div class="flex flex-col gap-4 border-b border-gray-200 px-4 py-4 sm:px-5 lg:flex-row lg:items-center lg:justify-between dark:border-gray-800">
+      <div class="flex-shrink-0">
+        <h3 class="text-base font-medium text-gray-800 dark:text-white/90">
+          Statistics
+        </h3>
+        <p class="text-sm text-gray-500 dark:text-gray-400">
           Target you’ve set for each month
         </p>
       </div>

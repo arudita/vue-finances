@@ -68,5 +68,37 @@ export const useAuthStore = defineStore('auth', () => {
     }
   }
 
-  return { user, isAuthenticated, loading, login, logout, fetchUser, checkAuth };
+  const register = async (name: string, email: string, password: string, password_confirmation: string, level: number): Promise<void> => {
+    loading.value = true;
+    try {
+      const response = await apiService.register({ name, email, password, password_confirmation, level });
+      const token = response.data.access_token;
+      console.log('Register response: ', response);
+
+      if (token) {
+        localStorage.setItem('auth_token', token);
+        await fetchUser();
+      }
+    } catch (error) {
+      console.error('Register failed: ', error);
+      throw error;
+    } finally {
+      loading.value = false;
+    }
+  }
+
+  const addUser = async (name: string, email: string, password: string, password_confirmation: string, level: number): Promise<void> => {
+    loading.value = true;
+    try {
+      const response = await apiService.register({ name, email, password, password_confirmation, level });
+      console.log('Register response: ', response);
+    } catch (error) {
+      console.error('Register failed: ', error);
+      throw error;
+    } finally {
+      loading.value = false;
+    }
+  }
+
+  return { user, isAuthenticated, loading, login, logout, fetchUser, checkAuth, register, addUser };
 });

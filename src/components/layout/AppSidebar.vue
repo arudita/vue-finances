@@ -147,11 +147,6 @@ const menuGroups = [
         name: "User Profile",
         path: "/profile",
       },
-      {
-        icon: SettingsIcon,
-        name: "Settings",
-        path: "/settings",
-      },
     ],
   },
 ];
