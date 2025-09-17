@@ -59,7 +59,7 @@ class ApiService {
         await this.getCsrfToken();
         return this.api.post('/api/auth/register', userData);
     }
-
+    
     async getUser(): Promise<AxiosResponse> {
         return this.api.get('/api/user');
     }

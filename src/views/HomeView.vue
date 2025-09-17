@@ -32,9 +32,6 @@
           <router-link to="/login" class="w-full text-center gap-2 px-6 py-3 text-sm font-medium text-white bg-gray-800 rounded-lg hover:bg-brand-600 dark:bg-brand-500 dark:hover:bg-brand-600 sm:w-auto">
             Log in
           </router-link>
-          <router-link to="/register" class="w-full text-center gap-2 px-6 py-3 text-sm font-medium text-white bg-gray-800 rounded-lg hover:bg-brand-600 dark:bg-brand-500 dark:hover:bg-brand-600 sm:w-auto">
-            Create an Account
-          </router-link>
         </div>
       </div>
     </div>

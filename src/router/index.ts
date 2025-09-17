@@ -12,19 +12,19 @@ const routes = [
     path: '/login',
     name: 'Login',
     component: () => import('@/views/auth/LoginView.vue'),
-    meta: { title: '',  requiresGuest: true }
+    meta: { title: 'Login Page', requiresGuest: true }
   },
-  {
-    path: '/register',
-    name: 'Register',
-    component: () => import('@/views/auth/RegisterView.vue'),
-    meta: { requiresGuest: true }
-  },
+  // {
+  //   path: '/register',
+  //   name: 'Register',
+  //   component: () => import('@/views/auth/RegisterView.vue'),
+  //   meta: { requiresGuest: true }
+  // },
   {
     path: '/dashboard',
     name: 'Dashboard',
     component: () => import('@/views/DashboardView.vue'),
-    meta: { requiresGuest: true },
+    meta: { requiresAuth: true },
   },
   {
     path: '/projects',
@@ -155,7 +155,7 @@ router.beforeEach(async (to: RouteLocationNormalized, from: RouteLocationNormali
 
   if (to.meta.requiresAuth && !authStore.isAuthenticated) {
     return { 
-      name: 'login', 
+      name: 'Login', 
       query: { redirect: to.fullPath } 
     };
   }
